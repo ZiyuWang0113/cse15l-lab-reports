@@ -71,7 +71,7 @@ You can also run both the compile `javac` and run `java` command both on the ser
 
 ![Image](https://user-images.githubusercontent.com/57332517/149257249-9ddcd679-8863-4f91-842c-f88ce463400a.png)
 
-### More about git
+### More about GitHub
 Not required on this report? 
 But this links refers to my `index.md` in github: https://github.com/ZiyuWang0113/cse15l-lab-reports/blob/main/index.md.
 
