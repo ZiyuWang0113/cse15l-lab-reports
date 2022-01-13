@@ -31,7 +31,7 @@ Try some commands like `cd`, `ls`, `pwd`, `mkdir` in the terminal.
 
 ![图片](https://user-images.githubusercontent.com/57332517/149254753-fc655500-d905-45f8-94a4-467f041e8f5b.png)
 
-`mkdir` will create a new directory.
+`mkdir` will create a new directory ofyour given name.
 
 ### Move files with scp
 
