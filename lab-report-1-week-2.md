@@ -3,7 +3,7 @@
 ## Ziyu Wang ziw003@ucsd.edu
 -----
 ### VScode
-Go to https://code.visualstudio.com/ and download the correct version for your operating system. The VSCode should be like this.
+Go to [Link](https://code.visualstudio.com/) and download the correct version for your operating system. The VSCode should be like this.
 * Add junit to path: press `Ctrl + Shift + P`, enter `java : config` choose classpath, add the source library with your jar file.
 * Change color theme: press `Ctrl + Shift + P`, enter `theme`, search and select your preferred themes.
 
@@ -12,7 +12,7 @@ Go to https://code.visualstudio.com/ and download the correct version for your o
 ### Course account on `ieng6`
 To connect to CSE 15L course account, follow these steps:
 
-1. Find your account name on https://sdacs.ucsd.edu/~icc/index.php
+1. Find your account name on [Link](https://sdacs.ucsd.edu/~icc/index.php)
 2. Install and Open Vscode, go to `Terminal`, enter `ssh cs15lwi22***@ieng6.ucsd.edu` where *** represents your own ID.
 3. Enter password, and the terminal will like this.
 4. You will need to reset password if your old one doesn't work.
