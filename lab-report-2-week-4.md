@@ -4,7 +4,7 @@
 
 ### 1
 
-Code: `if (nextOpenBracket == -1 || nextCloseBracket == -1 || openParen == -1 || closeParen == -1) {System.out.println("Missing bracket/parentheses. Working link(s):");break;}`
+Code:
 
 ![Image](https://user-images.githubusercontent.com/57332517/151465024-b5903e80-a4ea-4a03-b81b-96327159e3d9.png)
 
@@ -24,7 +24,7 @@ Everytime if java has some error with index, we should consider whether we handl
 
 ### 2
 
-Code: `if(nextOpenBracket < 0) {break; }`
+Code:
 
 ![Image](https://user-images.githubusercontent.com/57332517/151467609-b7cfb09d-0b45-4780-b777-16c59a776a56.png)
 
@@ -39,3 +39,23 @@ When we compile and run the code, the symptom is shown as printing the same valu
 the program did not end in time but continued to run forever.
 
 Everytime if java has an infinite running, we should consider we wrote something in recursion or loop with an infinite syntax.
+
+
+
+### 3
+
+Code:
+
+![Image](https://user-images.githubusercontent.com/57332517/151469472-32f61c2b-1f33-47ae-ac85-646259cd451d.png)
+
+The link to the file which has the related error: [test-file4](https://github.com/ZiyuWang0113/markdown-parse/blob/main/test-file4.md)
+
+The incorrect terminal output in local computer:
+
+![Image](https://user-images.githubusercontent.com/57332517/151470894-0b2715cc-3419-4ee6-994b-0b9870c42182.png)
+
+This bug is because the code did not find the image link correct and consider it as incorrect. When we compile and run the code, the symptom is shown as it outputs the correct link before the image twice, which indicates the code did not find the correct link for image.
+
+Everytime if java has incorrect output about some contents which were corrected designed before this input, we should be aware of those new-comming inputs, try to make sure we separate them and handle with different situations.
+
+
