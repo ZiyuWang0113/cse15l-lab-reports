@@ -13,7 +13,7 @@
 ![Image](https://user-images.githubusercontent.com/57332517/153525506-a309d0a8-48b4-4f6a-b42f-7f3bae66a30e.png)
 
 
-#### 3. Copy whole directory and run test in one line command.  **Error here**
+#### 3. Copy whole directory and run test in one line command.  **Error and fixed solution from Piazza here**
 
        a. Remove the original directory first.
   
@@ -34,11 +34,15 @@ The following is my thoughts and discussion with tutor:
 2. I try "ls" or "cd" together after ssh, it is correct, so the grammar and syntax is correct.
 3. I try ```java -version``` separately on server and in one-line command after ssh, it provides different output, which is weird. On server, I have normal java, but in one-line,
 it is about the jdk version, which is weird.
-4. The error about cannot find symbol for ```Path.of``` and ```Files.readString``` is the same one I had in the very beginning of this quarter, which is fixed by updating my locol computer's java to latest version. For this problem, it's because the old version of java has different method and name for Path and Files class, so I am not sure whether it's the same issue on the server. 
-5. From the discussion with tutor, I tried serveral methods, including the ```*```, the ```&&```, and the ```javac MarkdownParse.java``` first. They basically have the same cannot find symbol.
-6. The line is written on Thursday 6:20 p.m. 2/10/2022, if no solution is found until Friday 2/11/2022, this line will remain unchanged. Sorry for the error.
+4. The error about cannot find symbol for ```Path.of``` and ```Files.readString``` is the same one I had in the very beginning of this quarter, which is fixed by updating my locol computer's java to latest version. For this problem, it's because the old version of java has different method and name for Path and Files class, so I am not sure whether it's the same issue on the server. I would say the path for java or something is not correct if we directly do commands after ssh.
+6. The line is written on Thursday 6:20 p.m. 2/10/2022, the solution is found afterwards. Sorry for the error.
 
+**Update**
 
+Using the command including the path will fix that. Thanks to the Piazza and Joe.
 
+![Image](https://user-images.githubusercontent.com/57332517/153535083-c283c920-7ddc-48b2-b035-73601cac0c0a.png)
+
+![Image](https://user-images.githubusercontent.com/57332517/153535099-e8403433-9775-4a2e-91a4-fd0318fc9b68.png)
 
 **Thank you for reading.**
