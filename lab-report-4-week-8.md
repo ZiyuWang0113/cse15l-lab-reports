@@ -20,12 +20,11 @@ For my implementation:
 
 ![图片](https://user-images.githubusercontent.com/57332517/155639450-a77040d5-d50a-492e-b9b9-6ff6584d4ca5.png)
 
-I think there can be a small code change to fix it. It should check the \` between brackets so when there are two of them, the characters turn into a code block. So, maybe create new variables to trace the locations for \`, and then check whether the brackets still work. In the parentheses， the \` can be igored since the parentheses has higher priority so the link will be kept. I would say 10 line is roughly enough.
-
 For reviewed implementation:
 
 ![图片](https://user-images.githubusercontent.com/57332517/155638678-0c8d9027-226b-41a2-8d9a-3663aac2161c.png)
 
+Both of the implementations have same wrong output.
 I think there can be a small code change to fix it. It should check the \` between bracket so when there are two of them, the characters turn into a code block. So, maybe create a new varibale to trace the location for \`, and then check whether the brackets still work. In the parentheses， the \` can be igored since the parentheses has higher priority so the link will be kept. I would say 10 line is roughly enough.
 
 
@@ -39,6 +38,23 @@ Test in VScode:
 
 ![图片](https://user-images.githubusercontent.com/57332517/155641473-75a28e03-6783-416e-99f0-6cc1851e6e88.png)
 
+For my implementation:
+
+![图片](https://user-images.githubusercontent.com/57332517/155641699-59729029-f57c-4e70-87ed-7e94cede0858.png)
+
+
 For reviewed implementation:
 
 ![图片](https://user-images.githubusercontent.com/57332517/155641442-b945d167-0b16-40d6-80c4-6a4dc007a62d.png)
+
+My implementation has index out of bound. I think it is because I did not check whether nextOpenBracket is 0, so 0 - 1 will have index out of bound.
+Overall, I think it will be about MORE than 10 lines for my implementation to make the change, so it can be like: 1. check the "0" for the variable to avoid index out of bound 2. Try to have a if-statement to check whether there is additional brackets between brackets or addtional parentheses between parentheses. When they have addtional matched ones, the code should continue to add those links with bracket or parentheses but not just break and jump to next link. 
+
+
+### Snippet 3
+
+Should be:
+
+![图片](https://user-images.githubusercontent.com/57332517/155643836-61083d5f-9e51-46ef-b089-eb37024bc400.png)
+
+
