@@ -77,4 +77,6 @@ The error for me is index out of bound which should at when nextOpenBracket equa
 Which tells me: 1. I need to check the closing parenthesis in the loop. When there is no closing, the link should be invalid. 2. If there is no closing, and next bracket comes, the code should be able to discard the previous link and begin with another bracket check since the next link may be valid. 3. The code needs to check if the link has a adjacent closing parenthesis within two lines. Because if the closing parenthesis comes after two new lines in markdown like `(link.com \n \n)`, the link is invalid.
 
 
-Thank you for reading.
+
+
+### Thank you for reading.
