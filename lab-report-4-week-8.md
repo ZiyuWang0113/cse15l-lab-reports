@@ -8,17 +8,37 @@ Link to reviewed repository: [Reviewed](https://github.com/kathyychenn/markdown-
 
 ### Snippet 1
 
-Should be: ![图片](https://user-images.githubusercontent.com/57332517/155637710-5cc31f6c-de1c-42fa-a4a1-7efa370f38b6.png)
+Should be: 
+
+![图片](https://user-images.githubusercontent.com/57332517/155637710-5cc31f6c-de1c-42fa-a4a1-7efa370f38b6.png)
 
 Test in VScode:
+
 ![图片](https://user-images.githubusercontent.com/57332517/155638527-68627d84-de88-4e6f-8bb9-90f4aabae245.png)
 
 For my implementation:
+
 ![图片](https://user-images.githubusercontent.com/57332517/155639450-a77040d5-d50a-492e-b9b9-6ff6584d4ca5.png)
 
 I think there can be a small code change to fix it. It should check the \` between brackets so when there are two of them, the characters turn into a code block. So, maybe create new variables to trace the locations for \`, and then check whether the brackets still work. In the parentheses， the \` can be igored since the parentheses has higher priority so the link will be kept. I would say 10 line is roughly enough.
 
 For reviewed implementation:
+
 ![图片](https://user-images.githubusercontent.com/57332517/155638678-0c8d9027-226b-41a2-8d9a-3663aac2161c.png)
 
 I think there can be a small code change to fix it. It should check the \` between bracket so when there are two of them, the characters turn into a code block. So, maybe create a new varibale to trace the location for \`, and then check whether the brackets still work. In the parentheses， the \` can be igored since the parentheses has higher priority so the link will be kept. I would say 10 line is roughly enough.
+
+
+### Snippet 2
+
+Should be: 
+
+![图片](https://user-images.githubusercontent.com/57332517/155639742-7ae00327-5ac3-45b9-8200-c4b499c36446.png)
+
+Test in VScode:
+
+![图片](https://user-images.githubusercontent.com/57332517/155641473-75a28e03-6783-416e-99f0-6cc1851e6e88.png)
+
+For reviewed implementation:
+
+![图片](https://user-images.githubusercontent.com/57332517/155641442-b945d167-0b16-40d6-80c4-6a4dc007a62d.png)
