@@ -26,3 +26,8 @@ I would say my output seems more correct since the "url" is not a link, it is on
 Similar to #1 Test 194, which has other words between bracket and parentheses, also the parentheses. So similar fix solution as Test 194.
 
 #3.
+
+![图片](https://user-images.githubusercontent.com/57332517/157774738-142e78f3-21e5-4240-a354-291d57d17f14.png)
+
+I think both output is wrong. However, I am not sure for this test file, I would say the correct output is the link "bar*" if the markdown is generated. If my expected output is correct, I would say the fix need to check the quotes between the valid parentheses since the words in the quotes is the document and do not count as link itself. So, check quotes in valid parentheses is required.
+
