@@ -95,4 +95,6 @@ Same issue with Test, but more with the `<>`. So the fix should also check wheth
 
 I think both are wrong. Since there are quotes, so the expected output is just the give url. The fix is similar to Test 32 which adds a quote check inside parentheses.
 
-#15. 
+#15. Test 506, 507, 508, 509
+
+All issues with url and quotes. My code is incorrect obviously. The general fix is to add a first check about `/url`, and then chech the quotes, so if both are satisfied, we can keep that link in the parentheses .
