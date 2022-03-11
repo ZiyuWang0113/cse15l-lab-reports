@@ -37,8 +37,35 @@ I think both output is wrong. However, I am not sure for this test file, I would
  
 I think my output is wrong. This is not a valid link, so the output should be empty. It's similar to #3 Test 22 since the quote check is required, also, links usually are without special punctuations.
 
-#5. 
+#5. Test 41
 
 ![图片](https://user-images.githubusercontent.com/57332517/157775621-cf288cc9-52e5-47be-a581-725276b673c2.png)
+
+I think my output is wrong. This is not a valid link, so the output should be empty. Similar to Test 22 and Test 32.
+
+#6. Test 481
+
+![图片](https://user-images.githubusercontent.com/57332517/157777088-9f340c73-fe8b-4b3d-9e68-6dc964f49e9b.png)
+
+Similar to Test 22, the quote check.
+
+#7. Test 487
+
+![图片](https://user-images.githubusercontent.com/57332517/157778202-05d75d5b-6cf6-4a55-8162-b9811b2ba18b.png)
+
+I think my output is wrong. The expected output should be empty since there is a slash, so it is similar to the quote check, the slash should also be checked inside the parentheses.
+
+#8. Test 488
+
+Similar to Test 487
+
+#9 Test 489
+
+![图片](https://user-images.githubusercontent.com/57332517/157779754-6bb4b4c3-e0dd-4c1e-969b-7644480307fa.png)
+
+I think my output is wrong. Since this is a new line, it is not a valid link. In my code, I should check the `\n` which will influence the link. The fix should be about to check the `\n` inside a valid parentheses after bracket.
+
+
+
 
 
