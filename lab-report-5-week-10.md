@@ -109,4 +109,16 @@ I think prof's output is wrong. Since it is only a url, the link is not valid, t
 
 ![图片](https://user-images.githubusercontent.com/57332517/157782144-abf5afa8-d1f6-450b-9eec-55c3095d5ad1.png)
 
+I think my output is wrong. Since the url is correct, but there is more nested bracket inside bracket. So the fix should also add another check to check nested bracket, which is simialr to check nested parentheses inside parentheses.
 
+#18. Test 567
+
+![图片](https://user-images.githubusercontent.com/57332517/157783586-3019fad2-615c-458a-9bf2-e2851d6fe2ec.png)
+
+Both outputs are wrong since the "not a link" is not a link. The true link is the url1. So the fix should be to add additional check to check whether there is a colon after this link which will assgian a new address link to it. So we need a if-statement after this bracket to check a colon, and if a colon gives a link, we need to use this link to replace.
+
+#19. Test 571
+
+![图片](https://user-images.githubusercontent.com/57332517/157784162-9acd1272-ac08-48da-91aa-48c611966324.png)
+
+#20. Test
