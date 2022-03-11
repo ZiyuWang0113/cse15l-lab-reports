@@ -83,10 +83,16 @@ I think my output is wrong. Since there is another parentheses inside the valid 
 
 Exact same issue with Test 494, to add a check in code to check inner parentheses.
 
-#13. 
+#13. Test 498
 
 ![图片](https://user-images.githubusercontent.com/57332517/157780801-6beddbca-93b2-4d84-b932-221a34af889c.png)
 
+Same issue with Test, but more with the `<>`. So the fix should also check whether these lines are in a block of <>.
 
+#14. Test 505
 
+![图片](https://user-images.githubusercontent.com/57332517/157781016-9a775dc6-a588-4352-af31-6f063b1a2d45.png)
 
+I think both are wrong. Since there are quotes, so the expected output is just the give url. The fix is similar to Test 32 which adds a quote check inside parentheses.
+
+#15. 
