@@ -17,7 +17,7 @@
 ![图片](https://user-images.githubusercontent.com/57332517/157774565-a9778f03-381a-4e57-a5c4-11b0526895dc.png)
 
 
-I would say my output seems more correct since the "url" is not a link, it is only a word with underline. The bug is that this word is behind bracket and it is inside one complete block but there are something between bracket and parentheses , so the code may consider it as a valid link. I think the fix should first check whether the bracket is matched, and then check the parentheses is right after a valid pair of bracket(which is failed, thus select the word url out(inside a parentheses)).
+I would say my output seems more correct since the "url" is not a link, it is only a word with underline. The bug is that this word is behind bracket and it is inside one complete block but there are something between bracket and parentheses , so the code may consider it as a valid link. I think the fix should to add check statements to first check whether the bracket is matched, and then check the parentheses is right after a valid pair of bracket(which is failed, thus select the word url out(inside a parentheses)).
 
 #2. Test 201
 
@@ -29,7 +29,7 @@ Similar to #1 Test 194, which has other words between bracket and parentheses, a
 
 ![图片](https://user-images.githubusercontent.com/57332517/157774738-142e78f3-21e5-4240-a354-291d57d17f14.png)
 
-I think both output is wrong. However, I am not sure for this test file, I would say the correct output is the link "bar*" if the markdown is generated. If my expected output is correct, I would say the fix need to check the quotes between the valid parentheses since the words in the quotes is the document and do not count as link itself. So, check quotes in valid parentheses is required.
+I think both output is wrong. However, I am not sure for this test file, I would say the correct output is the link "bar*" if the markdown is generated. If my expected output is correct, I would say the fix need to add the ceckcheck the quotes between the valid parentheses since the words in the quotes is the document and do not count as link itself. So, check quotes in valid parentheses is required.
 
 #4. Test 32
 
@@ -59,12 +59,33 @@ I think my output is wrong. The expected output should be empty since there is a
 
 Similar to Test 487
 
-#9 Test 489
+#9. Test 489
 
 ![图片](https://user-images.githubusercontent.com/57332517/157779754-6bb4b4c3-e0dd-4c1e-969b-7644480307fa.png)
 
-I think my output is wrong. Since this is a new line, it is not a valid link. In my code, I should check the `\n` which will influence the link. The fix should be about to check the `\n` inside a valid parentheses after bracket.
+I think my output is wrong. Since this is a new line, it is not a valid link. In my code, I should add to check the `\n` which will influence the link. The fix should be about to check the `\n` inside a valid parentheses after bracket.
 
+#10. Test 490
+
+![图片](https://user-images.githubusercontent.com/57332517/157780028-d34a96ff-c3d8-4795-aee0-20f679423cab.png)
+
+Exact issue with Test 489, but also with the `<>`.
+
+#11. Test 494
+
+![图片](https://user-images.githubusercontent.com/57332517/157780203-3315b14e-34f6-46a5-b39f-1242e67c6372.png)
+
+I think my output is wrong. Since there is another parentheses inside the valid ones, the expected output should be the link with complete parentheses.The fixed should add to check if there is nested parentheses inside, and match the number of them, which can help to get those inner ones out aftre we reach the last close parentheses.
+
+#12. Test 495
+
+![图片](https://user-images.githubusercontent.com/57332517/157780215-4960d3bc-8949-40e1-95ee-62e530f06003.png)
+
+Exact same issue with Test 494, to add a check in code to check inner parentheses.
+
+#13. 
+
+![图片](https://user-images.githubusercontent.com/57332517/157780801-6beddbca-93b2-4d84-b932-221a34af889c.png)
 
 
 
