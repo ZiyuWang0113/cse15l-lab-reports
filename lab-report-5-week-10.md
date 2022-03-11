@@ -97,4 +97,16 @@ I think both are wrong. Since there are quotes, so the expected output is just t
 
 #15. Test 506, 507, 508, 509
 
-All issues with url and quotes. My code is incorrect obviously. The general fix is to add a first check about `/url`, and then chech the quotes, so if both are satisfied, we can keep that link in the parentheses .
+All issues with url and quotes. My code is incorrect obviously. The general fix is to add a first check about `/url`, and then chech the quotes, so if both are satisfied, we can keep that link in the parentheses.
+
+#16. Test 510
+
+![图片](https://user-images.githubusercontent.com/57332517/157781912-e7701f64-44dc-4225-a6d4-41595b5545a2.png)
+
+I think prof's output is wrong. Since it is only a url, the link is not valid, the output should be empty. The fix is to add a additional if-statement to check whether a url in only url inside a parentheses, which will not be valid to form a link.
+
+#17. Test 511
+
+![图片](https://user-images.githubusercontent.com/57332517/157782144-abf5afa8-d1f6-450b-9eec-55c3095d5ad1.png)
+
+
