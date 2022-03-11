@@ -121,4 +121,13 @@ Both outputs are wrong since the "not a link" is not a link. The true link is th
 
 ![图片](https://user-images.githubusercontent.com/57332517/157784162-9acd1272-ac08-48da-91aa-48c611966324.png)
 
-#20. Test
+My output is wrong. Since it starts with an `!`, so it is a image, we do not consider it as link, the output should be empty. For fix, I need to add a check about exclamation mark before the open bracket. If there is a `!`, we should skip the next parentheses which is a image.
+
+#20 Test 578
+
+![图片](https://user-images.githubusercontent.com/57332517/157784437-658dc2a0-14f1-4b4f-ada8-5a430f8d51ce.png)
+
+Same issue with Test 571 about image. The fix should check `!` and skip the next parentheses block if it is image. Furthermore, the quote is also here, so similar to Test 32, a quote check is also helpful.
+
+
+**Thank you for reading.**
