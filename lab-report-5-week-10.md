@@ -2,6 +2,8 @@
 
 ## Ziyu Wang ziw003@ucsd.edu
 
+**Code Naviagtion problem for Test 22, 489, 571 (three main problems, others are similar)fixed. Code screenshots updated, also provided place to add NEW conditional checks.**
+
 A. Copy the test-files and script to my markdown and output the result.
 
 ![图片](https://user-images.githubusercontent.com/57332517/157772057-00f2b728-125d-44ad-b56a-6194959b0bc3.png)
@@ -29,7 +31,13 @@ Similar to #1 Test 194, which has other words between bracket and parentheses, a
 
 ![图片](https://user-images.githubusercontent.com/57332517/157774738-142e78f3-21e5-4240-a354-291d57d17f14.png)
 
-I think both output is wrong. However, I am not sure for this test file, I would say the correct output is the link "bar*" if the markdown is generated. If my expected output is correct, I would say the fix need to add the ceckcheck the quotes between the valid parentheses since the words in the quotes is the document and do not count as link itself. So, check quotes in valid parentheses is required.
+I think both output is wrong. However, I am not sure for this test file, I would say the correct output is the link "bar*" if the markdown is generated. If my expected output is correct, I would say the fix need to add the check the quotes between the valid parentheses since the words in the quotes is the document and do not count as link itself. So, check quotes in valid parentheses is required.
+
+Which code should be fixed:
+
+![图片](https://user-images.githubusercontent.com/57332517/158759533-2b1c3eb6-5d69-4b18-9f3f-0a9d4569e5be.png)
+
+When there is just bracket check, those documented words are not checked, and this will cause an error since this code just include everything in the parentheses. So before ending this while loop, in the if statements, there should be a qutoe check right after the bracket is qualified.
 
 #4. Test 32
 
@@ -64,6 +72,12 @@ Similar to Test 487
 ![图片](https://user-images.githubusercontent.com/57332517/157779754-6bb4b4c3-e0dd-4c1e-969b-7644480307fa.png)
 
 I think my output is wrong. Since this is a new line, it is not a valid link. In my code, I should add to check the `\n` which will influence the link. The fix should be about to check the `\n` inside a valid parentheses after bracket.
+
+Which code should be fixed:
+
+![图片](https://user-images.githubusercontent.com/57332517/158760128-5cd648f0-7d44-461e-835a-7c73e13d7098.png)
+
+The wrong code is that it missed the check about "\n" so it will consider everything including a new line between parentheses, so after checking those missing parentheses, in the if statements, we need to add a "\n" check that if \n is detected, do not put contents as link and skip the index to next closed parentheses.
 
 #10. Test 490
 
@@ -122,6 +136,12 @@ Both outputs are wrong since the "not a link" is not a link. The true link is th
 ![图片](https://user-images.githubusercontent.com/57332517/157784162-9acd1272-ac08-48da-91aa-48c611966324.png)
 
 My output is wrong. Since it starts with an `!`, so it is a image, we do not consider it as link, the output should be empty. For fix, I need to add a check about exclamation mark before the open bracket. If there is a `!`, we should skip the next parentheses which is a image.
+
+which code should be fixed:
+
+![图片](https://user-images.githubusercontent.com/57332517/158760628-9a11b52b-77b6-443b-b83d-be9529f55e87.png)
+
+The code did not check an `!` for an image, so for current loop, it will mistakely take everything between parentheses even if it's a link. So before the nested two if statements, if there is an `!` before bracket, we should set current index to the next closed parentheses and use continue to skip current loop.
 
 #20 Test 578
 
